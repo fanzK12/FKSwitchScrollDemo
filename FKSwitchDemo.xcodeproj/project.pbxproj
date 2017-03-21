@@ -13,6 +13,10 @@
 		18AEF6241E80C17C0053200B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AEF6221E80C17C0053200B /* Main.storyboard */; };
 		18AEF6261E80C17C0053200B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AEF6251E80C17C0053200B /* Assets.xcassets */; };
 		18AEF6291E80C17C0053200B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AEF6271E80C17C0053200B /* LaunchScreen.storyboard */; };
+		18AEF6341E80C4090053200B /* FKSwitchTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEF6331E80C4090053200B /* FKSwitchTool.m */; };
+		18AEF63A1E8117240053200B /* FKSwitchSlideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEF6391E8117240053200B /* FKSwitchSlideVC.m */; };
+		18AEF63D1E8118710053200B /* FKTestListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEF63C1E8118710053200B /* FKTestListVC.m */; };
+		18AEF6401E811DAD0053200B /* FKNextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AEF63F1E811DAD0053200B /* FKNextVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,15 @@
 		18AEF6251E80C17C0053200B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18AEF6281E80C17C0053200B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AEF62A1E80C17C0053200B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AEF6321E80C4090053200B /* FKSwitchTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKSwitchTool.h; sourceTree = "<group>"; };
+		18AEF6331E80C4090053200B /* FKSwitchTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKSwitchTool.m; sourceTree = "<group>"; };
+		18AEF6361E80CA3D0053200B /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		18AEF6381E8117240053200B /* FKSwitchSlideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKSwitchSlideVC.h; sourceTree = "<group>"; };
+		18AEF6391E8117240053200B /* FKSwitchSlideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKSwitchSlideVC.m; sourceTree = "<group>"; };
+		18AEF63B1E8118710053200B /* FKTestListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKTestListVC.h; sourceTree = "<group>"; };
+		18AEF63C1E8118710053200B /* FKTestListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKTestListVC.m; sourceTree = "<group>"; };
+		18AEF63E1E811DAD0053200B /* FKNextVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKNextVC.h; sourceTree = "<group>"; };
+		18AEF63F1E811DAD0053200B /* FKNextVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKNextVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,8 @@
 		18AEF6181E80C17C0053200B /* FKSwitchDemo */ = {
 			isa = PBXGroup;
 			children = (
+				18AEF6301E80C2390053200B /* Class */,
+				18AEF6311E80C2390053200B /* FKSwitchTool */,
 				18AEF61C1E80C17C0053200B /* AppDelegate.h */,
 				18AEF61D1E80C17C0053200B /* AppDelegate.m */,
 				18AEF61F1E80C17C0053200B /* ViewController.h */,
@@ -75,8 +90,31 @@
 			isa = PBXGroup;
 			children = (
 				18AEF61A1E80C17C0053200B /* main.m */,
+				18AEF6361E80CA3D0053200B /* Header.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18AEF6301E80C2390053200B /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				18AEF6381E8117240053200B /* FKSwitchSlideVC.h */,
+				18AEF6391E8117240053200B /* FKSwitchSlideVC.m */,
+				18AEF63B1E8118710053200B /* FKTestListVC.h */,
+				18AEF63C1E8118710053200B /* FKTestListVC.m */,
+				18AEF63E1E811DAD0053200B /* FKNextVC.h */,
+				18AEF63F1E811DAD0053200B /* FKNextVC.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		18AEF6311E80C2390053200B /* FKSwitchTool */ = {
+			isa = PBXGroup;
+			children = (
+				18AEF6321E80C4090053200B /* FKSwitchTool.h */,
+				18AEF6331E80C4090053200B /* FKSwitchTool.m */,
+			);
+			path = FKSwitchTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +191,11 @@
 			files = (
 				18AEF6211E80C17C0053200B /* ViewController.m in Sources */,
 				18AEF61E1E80C17C0053200B /* AppDelegate.m in Sources */,
+				18AEF6341E80C4090053200B /* FKSwitchTool.m in Sources */,
+				18AEF63A1E8117240053200B /* FKSwitchSlideVC.m in Sources */,
 				18AEF61B1E80C17C0053200B /* main.m in Sources */,
+				18AEF63D1E8118710053200B /* FKTestListVC.m in Sources */,
+				18AEF6401E811DAD0053200B /* FKNextVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G585J4946N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FKSwitchDemo/Header.h";
 				INFOPLIST_FILE = FKSwitchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = admin.FKSwitchDemo;
@@ -284,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G585J4946N;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FKSwitchDemo/Header.h";
 				INFOPLIST_FILE = FKSwitchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = admin.FKSwitchDemo;
@@ -310,6 +354,7 @@
 				18AEF62F1E80C17C0053200B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
